@@ -1,0 +1,28 @@
+.CenterText{
+  text-align:center;
+}
+
+.btnwrapper{
+  text-align:center;
+}
+
+.main{
+  margin:1%;
+}
+
+/*Disable buttons with this class*/
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  border-color:gray;
+  color:gray;
+}
+
+.skillicon {
+  width:110px;
+  height:110px;
+  float:left;
+  margin:1rem;
+  border:4px solid gray;
+
+}

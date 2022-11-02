@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Looter | v0.0.1</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="CenterText" id="TitleText">Looter | v0.0.1</h1>
+    </div>
+
+    <div class="alert alert-primary CenterText">
+      News...
+    </div>
+
+    <div class="CustomNavBar CenterText">
+      <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="main" id="main" style="margin-left:6.3rem;">
+
+      <div class="col-lg-3 mb-4" style="float:left;">
+          <div class="card">
+              <img class="card-img-top" src="./assets/media/icons/WarriorIcon.png" alt="">
+              <hr>
+              <div class="card-body">
+                  <h5 class="card-title CenterText">Warrior</h5>
+                  <p class="card-text CenterText">
+                      Level: 0
+                  </p>
+                  <hr>
+                  <p class="CenterText">Skills go here</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="container CenterText" style="float:left">
+
+
+
+        <div class="row">
+
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/media/icons/adventure/AdventureIcon.png" alt="">
+
+                    <div class="card-body">
+                        <h5 class="card-title CenterText">Adventure</h5>
+                        <p class="card-text CenterText">
+                            Fight waves of monsters
+                            for juicy rewards
+                        </p>
+                        <hr>
+                        <div class="btnwrapper">
+                          <a href="./pages/adventure.html" class="btn btn-outline-primary btn-sm">
+                              Explore
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-4" id="MarketTile">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/media/icons/MarketIcon.png" alt="" id="MarketTileImg">
+
+                    <div class="card-body">
+                        <h5 class="card-title CenterText" id="MarketTileTxt">Market</h5>
+                        <p class="card-text CenterText" id="MarketTileDesc">
+                            Buy and sell your
+                            items for gold and silver
+                        </p>
+                        <hr>
+                        <div class="btnwrapper">
+                          <a href="./pages/fp.html" class="btn btn-outline-primary btn-sm" id="MarketTileBtn">
+                              Explore
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-4" id="ForgeTile">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/media/icons/ForgeIcon.png" alt="" id="ForgeTileImg">
+
+                    <div class="card-body">
+                        <h5 class="card-title CenterText" id="ForgeTileTxt">Forge</h5>
+                        <p class="card-text CenterText" id="ForgeTileDesc">
+                            Craft and modify items
+                            to become stronger
+                        </p>
+                        <hr>
+                        <div class="btnwrapper">
+                          <a href="./pages/fp.html" class="btn btn-outline-primary btn-sm" id="ForgeTileBtn">
+                              Explore
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-4" id="FarmTile">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/media/icons/GardenIcon.png" alt="" id="FarmTileImg">
+
+                    <div class="card-body">
+                        <h5 class="card-title CenterText" id="FarmTileTxt">Farm</h5>
+                        <p class="card-text CenterText" id="FarmTileDesc">
+                            Grow plants to collect herbs
+                            and ingredients
+                        </p>
+                        <hr>
+                        <div class="btnwrapper">
+                          <a href="./pages/fp.html" class="btn btn-outline-primary btn-sm" id="FarmTileBtn">
+                              Explore
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-4" id="BarnTile">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/media/icons/BarnIcon.jfif" alt="" id="BarnTileImg">
+
+                    <div class="card-body">
+                        <h5 class="card-title CenterText" id="BarnTileTxt">Barn</h5>
+                        <p class="card-text CenterText" id="BarnTileDesc">
+                            Collect and raise pets
+                            to help and fight alongside you
+                        </p>
+                        <hr>
+                        <div class="btnwrapper">
+                          <a href="./pages/fp.html" class="btn btn-outline-primary btn-sm" id="BarnTileBtn">
+                              Explore
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-4" id="LabTile">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/media/icons/PotionsIcon.png" alt="" id="LabTileImg">
+
+                    <div class="card-body">
+                        <h5 class="card-title CenterText" id="LabTileTxt">Lab</h5>
+                        <p class="card-text CenterText" id="LabTileDesc">
+                            Brew potions with herbs
+                            to get special passives
+                        </p>
+                        <hr>
+                        <div class="btnwrapper">
+                          <a href="./pages/fp.html" class="btn btn-outline-primary btn-sm" id="LabTileBtn">
+                              Explore
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/media/icons/LockIcon.png" alt="">
+
+                    <div class="card-body">
+                        <h5 class="card-title CenterText">Locked</h5>
+                        <p class="card-text CenterText">
+                            Hint: Level up
+                            more to unlock this tile!
+                        </p>
+                        <hr>
+                        <div class="btnwrapper">
+                          <a href="./pages/fp.html" class="btn btn-outline-primary btn-sm disabled">
+                              LOCKED
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="./assets/media/icons/LockIcon.png" alt="">
+
+                    <div class="card-body">
+                        <h5 class="card-title CenterText">Locked</h5>
+                        <p class="card-text CenterText">
+                            Hint: Level up
+                            more to unlock this tile!
+                        </p>
+                        <hr>
+                        <div class="btnwrapper">
+                          <a href="./pages/fp.html" class="btn btn-outline-primary btn-sm disabled">
+                              LOCKED
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-4" style="float:left;">
+          <div class="card">
+              <img class="card-img-top" src="" alt="">
+              <hr>
+              <div class="card-body">
+                  <h5 class="card-title CenterText">Inventory</h5>
+                  <p class="card-text CenterText">
+                      0/10
+                  </p>
+                  <hr>
+                  <p class="CenterText">Inventory Tabs go here</p>
+              </div>
+          </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+  </body>
+</html>
