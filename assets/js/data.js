@@ -5,11 +5,36 @@ let Player = {
   CurrentHealth: 100,
   TotalHealth: 100,
 
+  //Minimum and maximum physical damage(starting damage type)
+  MinPhysDmg: 4,
+  MaxPhysDmg: 2,
+
+  //Attack speed... the number represents in milliseoncds. so every x.. attack
+  AttackSpeed: 1500,
+  //This is out of 100 chance so for the example it is 75/100
+  HitChance: 75,
+
+  //Players exp, and total exp till level up
+  Experience: 0,
+  ExperienceToLvlUp: 30
+
+}
+
+let ActiveEnemy = {
+
+  Level: 0,
+  CurrentHealth: 0,
+  TotalHealth: 0,
+  MinExp: 0,
+  MaxExp: 0,
+  Name: ""
+
 }
 
 //Set our HTML elements to there variable so that we can access them in our js.
 let Element = {
 
+  //Tiles
   //The whole tile element
   MarketTile: document.getElementById("MarketTile"),
   //The tiles img, so we can access it to change to locked/unlocked
@@ -64,6 +89,16 @@ let Element = {
   LabTileDesc: document.getElementById("LabTileDesc"),
   //The tiles btn, so we can disable it with classes
   LabTileBtn: document.getElementById("LabTileBtn"),
+
+  //enemies
+  EnemyImg: document.getElementById("EnemyImg"),
+  EnemyNameText: document.getElementById("EnemyNameText"),
+  EnemyHealthBar: document.getElementById("EnemyHealthBar"),
+  EnemyHealthBarText: document.getElementById("EnemyHealthBarText"),
+
+  //Character stuff
+  CharacterLvlTxt: document.getElementById("CharacterLvlTxt")
+
 
 
 }

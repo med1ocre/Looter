@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Looter | v0.0.1</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="CenterText" id="TitleText">Looter | v0.0.1</h1>
+    </div>
+
+    <div class="alert alert-primary CenterText">
+      v0.0.1 | Combat Update!
+    </div>
+
+    <div class="CustomNavBar CenterText">
+      <a href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="main" id="main">
+
+      <div class="col-lg-3 mb-4 CharacterPanel">
+          <div class="card">
+              <div class="imgwrapper">
+                <img class="card-img-top" src="../assets/media/icons/CharacterLoadout.png" alt="" style="width:50%;height:50%;">
+              </div>
+              <hr>
+              <div class="card-body">
+                  <h5 class="card-title CenterText">Warrior</h5>
+                  <p class="card-text CenterText" id="CharacterLvlTxt">
+                      Level: 0
+                  </p>
+                  <hr>
+                  <div class="CenterText">
+                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Default Attack">
+                      <img src="../assets/media/icons/skills/WarriorSkill1.png" style="width:10%;height:10%; border:1px solid lightgray" title="Default Attack">
+                    </a>
+                    <br><label for="vehicle1">Autocast</label>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container CenterText" style="float:left">
+
+        <div class="row">
+
+          <div class="container" style="border:1px solid lightgray; border-radius:5px; CenterText">
+            <h1>Forest (0-10)</h1>
+          </div>
+
+          <div class="imgwrapper">
+            <img src="" alt="" id="EnemyImg">
+          </div>
+
+          <div class="CenterText" style="width:100%;">
+            <p id="EnemyNameText">Enemy</p>
+          </div>
+
+          <div class="progresswrapper">
+            <progress value="75" max="100" id="EnemyHealthBar" class="EnemyHealthBar CenterText"></progress>
+          </div>
+          <div class="CenterText" style="width:100%;">
+            <p id="EnemyHealthBarText">Health: 100/100<br>Level: 1</p>
+
+            <hr>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-3 mb-4 InventoryPanel">
+          <div class="card">
+              <img class="card-img-top" src="" alt="">
+              <hr>
+              <div class="card-body">
+                  <h5 class="card-title CenterText">Inventory</h5>
+                  <p class="card-text CenterText">
+                      0/10
+                  </p>
+                  <hr>
+                  <p class="CenterText">Inventory Tabs go here</p>
+              </div>
+          </div>
+      </div>
+
+
+    </div>
+
+
+
+    <script>
+
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      })
+
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="../assets/js/enemies.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+
+  </body>
+</html>
