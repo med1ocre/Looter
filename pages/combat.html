@@ -23,6 +23,11 @@
           <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
         </svg>
       </a>
+      <a href="#"onclick="saveGame()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+          <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+        </svg>
+      </a>
     </div>
 
     <div class="main" id="main">
@@ -40,9 +45,7 @@
                   </p>
                   <hr>
                   <div class="CenterText">
-                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Default Attack">
-                      <img src="../assets/media/icons/skills/WarriorSkill1.png" style="width:10%;height:10%; border:1px solid lightgray" title="Default Attack">
-                    </a>
+                    <img src="../assets/media/icons/skills/WarriorSkill1.png" style="width:10%;height:10%; border:1px solid lightgray" id="WarriorSkillIcon">
                     <br><label for="vehicle1">Autocast</label>
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                   </div>
@@ -55,7 +58,7 @@
         <div class="row">
 
           <div class="container" style="border:1px solid lightgray; border-radius:5px; CenterText">
-            <h1>Forest (0-10)</h1>
+            <h1>Forest (1-10)</h1>
           </div>
 
           <div class="imgwrapper">
@@ -78,9 +81,108 @@
         </div>
       </div>
 
-      <div class="col-lg-3 mb-4 InventoryPanel">
+      <div class="col-lg-3 mb-4 InventoryPanel" >
           <div class="card">
-              <img class="card-img-top" src="" alt="">
+              <div class="row CenterText" style="margin-top:2%; justify-content:center;">
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%; height:3rem;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="row" style="justify-content:center;">
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="row" style="justify-content:center;">
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="row" style="justify-content:center;">
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="row" style="justify-content:center;">
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
+                  <a href="#"></a>
+                </div>
+              </div>
               <hr>
               <div class="card-body">
                   <h5 class="card-title CenterText">Inventory</h5>
@@ -97,19 +199,6 @@
     </div>
 
 
-
-    <script>
-
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-      $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-      })
-
-
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -118,5 +207,14 @@
     <script src="../assets/js/data.js"></script>
     <script src="../assets/js/scripts.js"></script>
 
+
+    <script>
+
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      })
+
+
+    </script>
   </body>
 </html>

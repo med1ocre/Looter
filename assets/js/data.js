@@ -16,7 +16,7 @@ let Player = {
 
   //Players exp, and total exp till level up
   Experience: 0,
-  ExperienceToLvlUp: 30
+  ExperienceToLvlUp: 100
 
 }
 
