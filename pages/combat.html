@@ -14,11 +14,11 @@
     </div>
 
     <div class="alert alert-primary CenterText">
-      v0.0.1 | Combat Update!
+      v0.0.1 | News
     </div>
 
     <div class="CustomNavBar CenterText">
-      <a href="../index.html">
+      <a href="../index.html" onclick="saveGame()">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
           <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
         </svg>
@@ -52,8 +52,9 @@
               </div>
           </div>
       </div>
+    </div>
 
-      <div class="container CenterText" style="float:left">
+      <div class="container CenterText" style="float:left;width:43%;">
 
         <div class="row">
 
@@ -74,116 +75,112 @@
           </div>
           <div class="CenterText" style="width:100%;">
             <p id="EnemyHealthBarText">Health: 100/100<br>Level: 1</p>
-
             <hr>
           </div>
-
         </div>
       </div>
-
       <div class="col-lg-3 mb-4 InventoryPanel" >
           <div class="card">
-              <div class="row CenterText" style="margin-top:2%; justify-content:center;">
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%; height:3rem;">
-                  <a href="#"></a>
+              <div class="row CenterText" style="margin-top:2%; justify-content:center; ">
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid"id="p1s1"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s2"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s3"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s4"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s5"</a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%; margin:2%;">
-                  <a href="#"></a>
-                </div>
-              </div>
-              <div class="row" style="justify-content:center;">
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s6"></a>
                 </div>
               </div>
               <div class="row" style="justify-content:center;">
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s7"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s8"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s9"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s10"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s11"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-              </div>
-              <div class="row" style="justify-content:center;">
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
-                </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s12"></a>
                 </div>
               </div>
               <div class="row" style="justify-content:center;">
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s13"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s14"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s15"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s16"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s17"></a>
                 </div>
-                <div class="container CenterText" style="border:1px solid lightgray; border-radius:5px; width:10%;margin:2%;">
-                  <a href="#"></a>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s18"></a>
                 </div>
               </div>
-              <hr>
+              <div class="row" style="justify-content:center;">
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s19"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s20"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s21"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s22"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s23"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s24"></a>
+                </div>
+              </div>
+              <div class="row" style="justify-content:center;">
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s25"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s26"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s27"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s28"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s29"></a>
+                </div>
+                <div class="container CenterText" style="padding-left: 0px;  padding-right: 0px;border:1px solid lightgray; border-radius:5px; width:10%;margin:2%; height:3rem;">
+                  <a href="#"><img src="" class="img-fluid" id="p1s30"></a>
+                </div>
+              </div>
               <div class="card-body">
                   <h5 class="card-title CenterText">Inventory</h5>
                   <p class="card-text CenterText">
@@ -192,8 +189,12 @@
                   <hr>
                   <p class="CenterText">Inventory Tabs go here</p>
               </div>
-          </div>
-      </div>
+            </div>
+
+        </div>
+
+
+
 
 
     </div>
@@ -203,6 +204,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <script src="../assets/js/inventory.js"></script>
     <script src="../assets/js/enemies.js"></script>
     <script src="../assets/js/data.js"></script>
     <script src="../assets/js/scripts.js"></script>

@@ -97,8 +97,10 @@ let Element = {
   EnemyHealthBarText: document.getElementById("EnemyHealthBarText"),
 
   //Character stuff
-  CharacterLvlTxt: document.getElementById("CharacterLvlTxt")
+  CharacterLvlTxt: document.getElementById("CharacterLvlTxt"),
 
+  //Inventory
+  P1S1: document.getElementById("p1s1")
 
 
 }

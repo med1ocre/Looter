@@ -56,6 +56,13 @@ function UpdateTileVisibility(){
 
 }
 
+
+let autoSaveInterval = setInterval(function(){
+
+  saveGame();
+
+}, 30000) //30sec
+
 //Here we check when the index page is laoded, and when it does we will run our tilevisibility function to update our sprites/text to match
 window.onload = function(){
 
@@ -145,23 +152,26 @@ function RollGearDrop(){
   //96-98, legendary gear
   //99-100, unique gear
 
-  if(ratingRoll >= 1 && ratingRoll <= 40){
+  if(ratingRoll >= 1 && ratingRoll <= 65){
     gearRating = "Common";
-  }else if (ratingRoll >= 41 && ratingRoll <= 70) {
+  }else if (ratingRoll >= 66 && ratingRoll <= 85) {
     gearRating = "Magic";
-  }else if (ratingRoll >= 71 && ratingRoll <= 85){
+  }else if (ratingRoll >= 86 && ratingRoll <= 90){
     gearRating = "Rare";
-  }else if (ratingRoll >= 86 && ratingRoll <= 95){
+  }else if (ratingRoll >= 91 && ratingRoll <= 98){
     gearRating = "Epic";
-  }else if (ratingRoll >= 96 && ratingRoll <= 98){
-    gearRating = "Legendary";
   }else if (ratingRoll >= 99 && ratingRoll <= 100){
     gearRating = "Unique";
   }
 
   //Lastly we combine both of these rolls into one item :)
-  finalDrop = gearRating + " " + currentDrop;
-  console.log("The enemy dropped a " + finalDrop);
+  finalDrop = {
+    Name: currentDrop,
+    Rating: gearRating,
+  }
+
+  CurrentInventory.push(finalDrop);
+  console.log(CurrentInventory);
 
 }
 
@@ -220,6 +230,10 @@ function UpdateEnemyStats(){
   //Set the text value of the progress bar
   Element.EnemyHealthBarText.innerHTML = "Health: " + ActiveEnemy.CurrentHealth + "/" + ActiveEnemy.TotalHealth + "<br>\ Level: " + ActiveEnemy.Level;
 
+}
+
+function UpdateInventorySlot(){
+  P1S1.src =
 }
 
 function PlayerAttack(){
@@ -290,5 +304,11 @@ function saveGame(){
   };
   //stringify it for readability
   localStorage.setItem("gameSave", JSON.stringify(gameSave));
-  alert("Game Saved!");
+}
+
+let myArray = ['Helmt', 'Chestplate','Yup'];
+
+function testArray(){
+
+  myArray.splice(1, 1);
 }
